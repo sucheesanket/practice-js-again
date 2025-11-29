@@ -2,7 +2,7 @@ let teams=[
     {
         team:'CSK',
         primary:'yellow',
-        secondary:'black',
+        secondary:'gold',
         fullname:'Chennai Super Kings',
         trophies:5,
         captain:"MSD"
@@ -33,8 +33,8 @@ let teams=[
     },
     {
         team:'SRH',
-        primary:'orange',
-        secondary:'black',
+        primary:'green',
+        secondary:'orange',
         fullname:'Sun Risers Hyderabad',
         trophies:1,
         captain:"Pat Cummins"
@@ -74,7 +74,7 @@ let teams=[
     {
         team:'GT',
         primary:'royalblue',
-        secondary:'black',
+        secondary:'purple',
         fullname:'Gujurat Titans',
         trophies:1,
         captain:"Shubhman Gill"
@@ -83,3 +83,25 @@ let teams=[
     
 ]
 
+
+let box=document.querySelector("#box")
+let btn=document.querySelector("button")
+let h1=document.querySelector("h1")
+let p=document.querySelector("p")
+let h5=document.querySelector("h5")
+let h6=document.querySelector("h6")
+btn.addEventListener("click",()=>{
+    let rand=teams[Math.floor(Math.random()*teams.length)]
+    console.log(rand);
+    h1.innerText=rand.team
+    box.style.backgroundColor=rand.primary
+    h1.style.backgroundColor=rand.secondary
+    p.innerHTML=rand.fullname
+    h5.innerHTML=rand.captain
+    h6.innerHTML=rand.trophies + " trophies"
+
+    
+
+    
+    
+})

@@ -17,11 +17,13 @@ html , body{
     align-items: center;
     justify-content: center;
     gap: 25px;
+    border-radius: 10px;
 }
 h1{
     font-size: 35px;
     font-weight: 900;
     padding: 20px 30px;
+    border-radius: 10px;
     background-color: aqua;
 }
 p{
