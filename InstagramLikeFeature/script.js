@@ -1,0 +1,20 @@
+let box=document.querySelector(".box")
+let love=document.querySelector("#love")
+
+box.addEventListener("dblclick",()=>{
+    console.log("click");
+    love.style.opacity= 1
+    love.style.transform = 'translate(-50%,-50%) scale(1) rotate(0deg)'
+
+    setTimeout(function () {
+        love.style.transform = 'translate(-50%,-350%) scale(1) rotate(60deg)'
+    }, 800)
+    setTimeout(function () {
+        love.style.opacity = 0
+    }, 1000)
+    setTimeout(function () {
+        love.style.transform = 'translate(-50%,-50%) scale(0) rotate(-60deg)'
+    }, 1200)
+    
+})
+

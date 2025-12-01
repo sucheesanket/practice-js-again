@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height: 400px;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+
+}
+.box img{
+    height: 100%;
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+.box i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 60px;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    pointer-events: none;
+    background-image: url(https://t3.ftcdn.net/jpg/01/14/77/58/360_F_114775804_4yfG9qbKp1NlF1RLo4MUlGIVj9MWhnnc.jpg);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  transform: translate(-50%,-50%) scale(0) rotate(-60deg);
+  transition: all cubic-bezier(.65,1,.77,1.44) 0.3s;
+    /* height: 20px;
+    width: 20px; */
+
+}
