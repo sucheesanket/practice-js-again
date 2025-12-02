@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    white-space: none;
+    border-radius: 10px;
+    /* gap: 70px; */
+    background-color: grey;
+    padding: 30px 60px;
+}
+
+button{
+    background-color: royalblue;
+    color: white;
+    padding: 8px 25px;
+    /* text-transform: capitalize; */
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+button:active{
+    scale: .95;
+}
