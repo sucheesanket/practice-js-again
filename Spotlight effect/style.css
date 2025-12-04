@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+section{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+:root{
+    --x:250px;
+    --y:250px;
+}
+.box{
+    height: 100%;
+    width: 100%;
+    background: radial-gradient( 140px at var(--x) var(--y), transparent,rgba(0, 0, 0, 0.98));
+    position:absolute;
+    top: 0;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: top;
+}
+h5{
+    position: absolute;
+    bottom: 35%;
+    left: 5%;
+    color: rgb(64, 168, 92);
+    font-size: 50px;
+    text-transform: capitalize;
+    font-family: monospace;
+}
